@@ -1,82 +1,106 @@
 <!DOCTYPE html>
-.project h3{margin:0;font-size:20px;font-weight:600}
-.project p{color:var(--muted);font-size:14px}
-.skills span{display:inline-block;margin:6px;padding:8px 14px;border-radius:999px;background:#1d1b34;color:#fff;font-size:14px;border:1px solid #2d2a55}
-.contact{text-align:center}
-.contact a{margin:0 10px}
-footer{margin:60px 0 20px;text-align:center;color:#888;font-size:14px}
-@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}}
-</style>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio นักออกแบบกราฟิก</title>
+  <meta name="description" content="พอร์ตโฟลิโอนักออกแบบกราฟิก สไตล์สร้างสรรค์ ว้าว และดึงดูดสายตา" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0d0c1d; --card:#16142a; --text:#f4f4f9; --muted:#b5b8d1; --accent:#ff6ec7; --accent2:#6d5dfc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:22px;letter-spacing:1px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .btn{padding:10px 18px;border-radius:30px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:600;box-shadow:0 4px 18px rgba(0,0,0,.4)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:28px;padding:60px 0}
+    h1{font-size:clamp(32px,4vw,52px);font-weight:800;margin-bottom:16px;line-height:1.2}
+    .lead{color:var(--muted);font-size:18px;margin-bottom:20px}
+    .avatar img{border-radius:24px;box-shadow:0 10px 40px rgba(109,93,252,.3)}
+    .section{margin:60px 0}
+    .section h2{font-size:28px;font-weight:700;margin-bottom:20px;text-align:center;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .grid{display:grid;gap:20px}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--card);padding:20px;border-radius:20px;box-shadow:0 6px 24px rgba(0,0,0,.3);transition:transform .3s, box-shadow .3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 12px 32px rgba(0,0,0,.5)}
+    .card img{border-radius:16px;margin-bottom:14px}
+    .project h3{margin:0;font-size:20px;font-weight:600}
+    .project p{color:var(--muted);font-size:14px}
+    .skills span{display:inline-block;margin:6px;padding:8px 14px;border-radius:999px;background:#1d1b34;color:#fff;font-size:14px;border:1px solid #2d2a55}
+    .contact{text-align:center}
+    .contact a{margin:0 10px}
+    footer{margin:60px 0 20px;text-align:center;color:#888;font-size:14px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}}
+  </style>
 </head>
 <body>
-<header class="wrap">
-<div class="brand">🎨 Portfolio กราฟิกดีไซน์</div>
-<a class="btn" href="mailto:you@example.com">จ้างฉัน</a>
-</header>
+  <header class="wrap">
+    <div class="brand">🎨 Portfolio กราฟิกดีไซน์</div>
+    <a class="btn" href="mailto:you@example.com">จ้างฉัน</a>
+  </header>
 
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>สวัสดี! ฉันคือ <span style="color:var(--accent)">นักออกแบบกราฟิก</span> ที่สร้างงานว้าว</h1>
+        <p class="lead">ฉันเชื่อในการเล่าเรื่องผ่านภาพและดีไซน์ที่ดึงดูดสายตา ไม่ว่าจะเป็นแบรนด์ดิ้ง สื่อโฆษณา หรือ UI/UX</p>
+        <a class="btn" href="#projects">ดูผลงาน</a>
+      </div>
+      <div class="avatar">
+        <img src="https://picsum.photos/500/500?grayscale" alt="Profile" />
+      </div>
+    </section>
 
-<main class="wrap">
-<section class="hero">
-<div>
-<h1>สวัสดี! ฉันคือ <span style="color:var(--accent)">นักออกแบบกราฟิก</span> ที่สร้างงานว้าว</h1>
-<p class="lead">ฉันเชื่อในการเล่าเรื่องผ่านภาพและดีไซน์ที่ดึงดูดสายตา ไม่ว่าจะเป็นแบรนด์ดิ้ง สื่อโฆษณา หรือ UI/UX</p>
-<a class="btn" href="#projects">ดูผลงาน</a>
-</div>
-<div class="avatar">
-<img src="https://picsum.photos/500/500?grayscale" alt="Profile" />
-</div>
-</section>
+    <section class="section">
+      <h2>ทักษะ</h2>
+      <div class="skills" style="text-align:center">
+        <span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>After Effects</span><span>Branding</span><span>UI/UX</span>
+      </div>
+    </section>
 
+    <section id="projects" class="section">
+      <h2>ผลงานเด่น</h2>
+      <div class="grid grid-3">
+        <article class="card project">
+          <img src="https://picsum.photos/seed/design1/640/420" alt="Project 1" />
+          <h3>Visual Identity – แบรนด์ A</h3>
+          <p>งานออกแบบแบรนด์ดิ้งและคู่มือการใช้สี/ฟอนต์ ที่ทันสมัยและชัดเจน</p>
+        </article>
+        <article class="card project">
+          <img src="https://picsum.photos/seed/design2/640/420" alt="Project 2" />
+          <h3>Motion Graphic Campaign</h3>
+          <p>คลิปโมชั่นโปรโมตสินค้า 30 วิ สร้างการรับรู้แบรนด์ได้กว่า 1M views</p>
+        </article>
+        <article class="card project">
+          <img src="https://picsum.photos/seed/design3/640/420" alt="Project 3" />
+          <h3>UI/UX แอปพลิเคชัน</h3>
+          <p>ออกแบบหน้าตาแอปพลิเคชันที่ใช้ง่าย พร้อม prototype ใน Figma</p>
+        </article>
+      </div>
+    </section>
 
-<section class="section">
-<h2>ทักษะ</h2>
-<div class="skills" style="text-align:center">
-<span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>After Effects</span><span>Branding</span><span>UI/UX</span>
-</div>
-</section>
+    <section class="section contact">
+      <h2>ติดต่อฉัน</h2>
+      <p>อีเมล: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>
+        <a class="btn" href="https://dribbble.com" target="_blank">Dribbble</a>
+        <a class="btn" href="https://behance.net" target="_blank">Behance</a>
+        <a class="btn" href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </section>
 
+    <footer>
+      © <span id="year"></span> กราฟิกดีไซน์เนอร์ — Portfolio
+    </footer>
+  </main>
 
-<section id="projects" class="section">
-<h2>ผลงานเด่น</h2>
-<div class="grid grid-3">
-<article class="card project">
-<img src="https://picsum.photos/seed/design1/640/420" alt="Project 1" />
-<h3>Visual Identity – แบรนด์ A</h3>
-<p>งานออกแบบแบรนด์ดิ้งและคู่มือการใช้สี/ฟอนต์ ที่ทันสมัยและชัดเจน</p>
-</article>
-<article class="card project">
-<img src="https://picsum.photos/seed/design2/640/420" alt="Project 2" />
-<h3>Motion Graphic Campaign</h3>
-<p>คลิปโมชั่นโปรโมตสินค้า 30 วิ สร้างการรับรู้แบรนด์ได้กว่า 1M views</p>
-</article>
-<article class="card project">
-<img src="https://picsum.photos/seed/design3/640/420" alt="Project 3" />
-<h3>UI/UX แอปพลิเคชัน</h3>
-<p>ออกแบบหน้าตาแอปพลิเคชันที่ใช้ง่าย พร้อม prototype ใน Figma</p>
-</article>
-</div>
-</section>
-
-
-<section class="section contact">
-<h2>ติดต่อฉัน</h2>
-<p>อีเมล: <a href="mailto:you@example.com">you@example.com</a></p>
-<p>
-<a class="btn" href="https://dribbble.com" target="_blank">Dribbble</a>
-<a class="btn" href="https://behance.net" target="_blank">Behance</a>
-<a class="btn" href="https://instagram.com" target="_blank">Instagram</a>
-</p>
-</section>
-
-
-<footer>
-© <span id="year"></span> กราฟิกดีไซน์เนอร์ — Portfolio
-</footer>
-</main>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
